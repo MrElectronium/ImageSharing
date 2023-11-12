@@ -6,9 +6,9 @@
 </ul>
 <ul>
 <b>Teknik Detaylar</b>
-<li>Custom modal componenet mevcut</li>
+<li>Custom modal component mevcut</li>
 <li>useRef,useContent,useState gibi hooklar kullanıldı</li>
-  <li>Her componenetin kendine has css dosyası mevcut</li>  
+  <li>Her componentin kendine has css dosyası mevcut</li>  
 </ul>
 <h3>Not:Şimdilik daha geliştirilme aşamasında olup güncellemeler olabilir</h3>
 
