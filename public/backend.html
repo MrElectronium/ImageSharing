@@ -1,0 +1,23 @@
+<script>
+    var arr=[];
+    function add()
+    {
+        let filebox=document.getElementById("filebox");
+        let filename="";
+        if(filebox.files.length>0)
+        {
+            filename="./pics/"+filebox.files[0].name;
+        }
+        let con=document.getElementById("content");
+        arr.push({src:filename,content:con.value});
+        console.log({src:filename,content:con.value});
+    }
+    function arrget()
+    {
+        console.log(JSON.stringify(arr));
+    }
+</script>
+<input type="file" id="filebox">
+<input type="text" id="content">
+<button onclick="add()">Ekle</button>
+<button onclick="arrget()">Tüm arr getir</button>

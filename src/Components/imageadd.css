@@ -1,0 +1,12 @@
+.imgadd{
+    border-radius: 5px;
+    margin:2%;
+    box-shadow: RGBA(0,0,0,0.2) 0 0 10px;
+    width:200px;
+    height: 200px;
+    cursor:pointer;
+}
+.imgadd:hover{
+    filter:opacity(0.8);
+    transition: ease-out;
+}
