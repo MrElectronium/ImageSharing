@@ -5,7 +5,7 @@ import { useContext } from "react";
 function ImgAdd(props)
 {
     const picsfnc=useContext(picsCtx);
-    var moddata={title:"Resim Ekle",mode:0} 
+    var moddata={title:"Resim Ekle",content:"Resim açıklaması",mode:0} 
     //mode:0 Ekleme
     //mode:1 Değiştirme 
     return(
