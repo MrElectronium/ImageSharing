@@ -1,6 +1,7 @@
 <h1>Image Sharing tarzı websayfasının React.js kullanılarak kullanıcı kısmının tasarımı </h1>
 <p>node.js ve react kütüphanelerini gerektirir `npm start` komutu ile çalıştılır</p>
 <ul><b>Neler yapılabiliyor?</b>  
+  <li>Kullanıcı Bilgilerini Güncelleme</li>
   <li>Resim Ekleme/Güncelleme/Silme</li>
   <li>Resimler arası gezinme</li>   
 </ul>
