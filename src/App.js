@@ -9,6 +9,8 @@ import picctx from './Components/picsstore.js';
 import { useState } from 'react';
 function App() {
   var [pics,setPics]=useState(arr);
+  var [userdata,setUserData]=useState({id:0,username:"cici kuş",
+  profileimg:"./out.png",about:"Doğal ortamlarında ağırlıklı olarak tohumla beslenen bu tür, Avustralya'nın kurak .."});
   const addPic = (text,filesrc) => {
     if (text && filesrc) {
       let id=uuid().replaceAll("-","").slice(7);
@@ -51,7 +53,7 @@ function App() {
   return (
     <>   
       <picctx.Provider value={{modPic,addPic,delPic,pics}}>
-    <Topbar src='out.png' username="Cici Kuş" about="Doğal ortamlarında ağırlıklı olarak tohumla beslenen bu tür, Avustralya'nın kurak .." uploaded={pics.length}/>
+    <Topbar userdata={userdata} setuserdata={setUserData} uploaded={pics.length}/>
      <Images imgs={pics}/>
      </picctx.Provider>
     </>

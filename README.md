@@ -1,6 +1,5 @@
 <h1>Image Sharing tarzı websayfasının React.js kullanılarak kullanıcı kısmının tasarımı </h1>
-<p>node.js ve react kütüphanelerini gerektirir. Önce 'npm i' komutu ile modüller yüklenir 
-`npm start` komutu ile çalıştılır. localhost:3000/ adresinden ulaşabilirsiniz</p>
+<p>node.js ve react kütüphanelerini gerektirir `npm start` komutu ile çalıştılır</p>
 <ul><b>Neler yapılabiliyor?</b>  
   <li>Resim Ekleme/Güncelleme/Silme</li>
   <li>Resimler arası gezinme</li>   

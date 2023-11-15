@@ -3,13 +3,14 @@ import './images.css';
 import Modal from './modal'
 import FullModal from './fullmodal'
 import Imgadd from './imageadd';
+import ProfileModal from "./profilemodal";
 import { useState,useContext } from 'react';
 import picsCtx from "./picsstore";
 function Images(props)
 {
     const picsfnc=useContext(picsCtx);
     const [openmodal,setOpenModal]=useState(false);
-    const [fullmodal,setFullModal]=useState(false);
+    const [fullmodal,setFullModal]=useState(false);   
     const [mode,setMode]=useState({title:"Resim Ekle",mode:0});
     const [selectedPicID,setPicID]=useState(0);
     if(props.imgs.length>0)
@@ -24,6 +25,7 @@ function Images(props)
             })}      
             {openmodal&&<Modal openmodal={setOpenModal}  modes={mode} />}
             {fullmodal&&<FullModal openmodal={setFullModal} id={selectedPicID} pics={props.imgs}/>}
+            
             </div>
             </>)
             
